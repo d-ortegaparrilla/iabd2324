@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
+      <link rel="stylesheet" href="../extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -884,6 +886,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Algoritmos de clasificación
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -893,6 +906,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#k-vecinos-mas-proximos" class="md-nav__link">
+    K vecinos más próximos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arboles-de-decision" class="md-nav__link">
+    Árboles de decisión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmo-clasificador-bayesiano-ingenuo" class="md-nav__link">
+    Algoritmo clasificador bayesiano ingenuo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analisis-discriminante" class="md-nav__link">
+    Análisis discriminante
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regresion-logistica" class="md-nav__link">
+    Regresión logística
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maquinas-de-vector-soporte" class="md-nav__link">
+    Máquinas de vector soporte
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -954,6 +1028,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#k-vecinos-mas-proximos" class="md-nav__link">
+    K vecinos más próximos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arboles-de-decision" class="md-nav__link">
+    Árboles de decisión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmo-clasificador-bayesiano-ingenuo" class="md-nav__link">
+    Algoritmo clasificador bayesiano ingenuo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analisis-discriminante" class="md-nav__link">
+    Análisis discriminante
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regresion-logistica" class="md-nav__link">
+    Regresión logística
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maquinas-de-vector-soporte" class="md-nav__link">
+    Máquinas de vector soporte
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -971,8 +1095,57 @@
 <p>Una tarea de <strong>clasificación</strong> se emplea para predecir una categoría, con un conjunto finito de valores posibles. En el caso de dos posibilidades se trata de <strong>clasificación binaria</strong>; y si se quiere predecir más de dos categorías, se trata de <strong>clasificación multiclase</strong>. </p>
 <p>La <strong>frontera de decisión</strong> (<em>decision boundary</em>) separa las diferentes clases predichas. Si un algoritmo clasificador aprende una frontera de decisión de tipo lineal, se dice que es un <strong>clasificador lineal</strong> (<em>lineal classifier</em>).</p>
 <p>Las siguientes imágenes muestra un clasificador lineal frente a un no lineal para una tarea de clasificación binaria (2 clases), que utiliza 2 características. </p>
-<p><img alt="" src="../images/05/classification1.png" />{: style="width:100px"}
-<img src="../images/05/classification1.png" alt="drawing" width="100"/></p>
+<p><img alt="" src="../images/05/classification1.png" /></p>
+<p>Existen clases en la que no es posible utilizar clasificadores lineales con éxito, ya que no son linealmente separables. La siguiente imagen ejemplifica esto:</p>
+<p><img alt="" src="../images/05/classification2.png" /></p>
+<p>En el caso del dataset Iris tenemos 3 categorías posibles, por lo que tendríamos un clasificador multiclase.</p>
+<p><img alt="" src="../images/05/classification3.png" /></p>
+<p>En los anteriores ejemplos se muestran clasificadores que utilizan 2 características, lo que permite representarlos en un plano (ancho por alto). En estos las fronteras de decisión de los clasificadores lineales se visualizan como líneas rectas. 
+Esto se puede generalizar para clasificadores que utilicen más 2 características. Con 5 características, el espacio de valores de X es en 5 dimensiones. En este caso, la frontera de decisión sería un hiperplano en 4 dimensiones que separaría el espacio en 2 mitades.</p>
+<p>La siguiente imagen muestra un clasificador binario con 3 características:</p>
+<p><img alt="" src="../images/05/classification4.png" /></p>
+<p>A continuación, se detallarán algunos algoritmos de clasificación.</p>
+<h2 id="k-vecinos-mas-proximos">K vecinos más próximos</h2>
+<p>El algoritmo de <strong>k vecinos más próximos</strong> (<em>k-nearest neighbors</em>, <strong>k-NN</strong>), es un algoritmo supervisado basando en instancias, sin que sea necesario que haya una concordancia exacta con los datos del conjunto de entrenamiento, de forma que el algoritmo clasifica el nuevo elemento en el conjunto que le corresponde buscando en las observaciones más cercanas. Para ello, calcula las distancias a los elementos y las ordena de menor a mayor para asignar el grupo que tenga una frecuencia más alta con las distancias menores.</p>
+<p>Este método es muy sensible al parámetro <em>k</em>, que indica el número de vecinos seleccionado y la métrica de distancia utilizada. El valor de <em>k</em> se fija tras realizar varias pruebas o mediante una validación cruzada. La siguiente imagen muestra cómo cambia la frontera de decisión conforme se cambia el parámetro <em>k</em>.</p>
+<p><img alt="" src="../images/05/kneighbors.png" /></p>
+<p>Como mayor inconveniente, este método necesita todo el conjunto de datos de entrenamiento para cada elemento nuevo a clasificar, por lo que requiere gran cantidad de memoria y consumo de procesamiento. Por este motivo, es recomendable para conjuntos pequeños.</p>
+<h2 id="arboles-de-decision">Árboles de decisión</h2>
+<p>Los <strong>árboles de decisión</strong> (<em>Decision Tree</em>, <strong>DT</strong>) son algoritmos para hacer clasificaciones realizando particiones sucesivas, mediante la técnica denominada <strong>segmentación jerárquica</strong>, agrupando observaciones similares. Analizan situaciones que presentan varias posibilidades de decisión y toman la que consideran mejor.</p>
+<p>El método, cuando se encuentra ante una decisión, utiliza la información del conjunto de datos de entrenamiento para buscar una correlación entre el elemento nuevo y los conocidos y así poder elegir la opción correcta. 
+Los árboles de decisión están formados por los siguientes componentes:</p>
+<ul>
+<li><strong>Nodos</strong>: son las variables de entrada y plantean las opciones de decisión, siendo el primer elemento del árbol el nodo raíz.</li>
+<li><strong>Ramas</strong>: indican los valores que pueden tomar las variables de entrada y unen los nodos entre sí.</li>
+<li><strong>Hojas</strong>: muestran los valores de las variables de salida, es decir, el resultado de la decisión.</li>
+</ul>
+<p>Algunos de los algoritmos de árboles de decisión más utilizados son los siguientes:</p>
+<ul>
+<li>
+<p>El algoritmo de <strong>árboles de clasificación y regresión</strong> (<strong>CART</strong>) genera árboles de decisión binarios, por lo que cada nodo se divide en dos ramas.
+  <img alt="" src="../images/05/decisiontree.jpg" /></p>
+</li>
+<li>
+<p>Los algoritmos <strong>C5.0</strong>, que es una evolución del <strong>C4.5</strong> que a su vez los es de <strong>ID3</strong>, forman una familia de algoritmos de los más utilizados en tareas de clasificación.</p>
+</li>
+<li>El algoritmo de <strong>bosque aleatorio</strong> (<em>Random Forest</em>, <strong>RF</strong>) combina varios árboles con distinta cantidad <em>k</em> de características y la salida de cada uno de ellos proporciona un voto, siendo la opción más votada la elegida como la respuesta del modelo.
+  <img alt="" src="../images/05/randomforest.png" /></li>
+</ul>
+<p>Este método no es apropiado para conjuntos de datos pequeños y requiere mucho tiempo durante la fase de entrenamiento.</p>
+<h2 id="algoritmo-clasificador-bayesiano-ingenuo">Algoritmo clasificador bayesiano ingenuo</h2>
+<p>El algoritmo clasificador <strong>bayesiano ingenuo</strong> (<em>Naïve Bayes</em>) es una técnica de clasificación probabilística que está fundamentada en el teorema de Bayes y está basada en la idea de que el mejor modelo es el más probable, asumiendo que la ocurrencia de una determinada característica es independiente de que sucedan las otras particularidades. Este es el motivo por el que se le llama ingenuo.</p>
+<p>Solo requiere un pequeño conjunto de datos de entrenamiento para realizar la estimación de los parámetros necesarios: medias y varianzas.</p>
+<p>Es un algoritmo simple y efectivo que se utiliza frecuentemente en la clasificación de texto.</p>
+<h2 id="analisis-discriminante">Análisis discriminante</h2>
+<p>El <strong>análisis discriminante lineal</strong> (<em>Lineal Discriminant Analysis</em>, <strong>LDA</strong>) calcula unas funciones lineales a partir de los atributos de su perfil, donde la función que alcanza mayor valor define el grupo al que pertenece el nuevo elemento de forma más probable. Cada elemento solamente puede pertenecer a un único grupo.
+<img alt="" src="../images/05/LDA.png" /></p>
+<h2 id="regresion-logistica">Regresión logística</h2>
+<p>Asigna una probabilidad entre 0 y 1 de que una instancia pertenezca a una categoría. En el caso de una clasificación binaria una instancia se clasificaría a una categoría cuando esta probabilidad sea &gt;= 0.5.</p>
+<p>Se representa mediante una curva formada con forma de S, llamada función sigmoidea, que es una función matemática que se utiliza para asignar los valores predichos a las probabilidades.</p>
+<p><img alt="" src="../images/05/logistic.png" /></p>
+<h2 id="maquinas-de-vector-soporte">Máquinas de vector soporte</h2>
+<p>Las <strong>máquinas de vector soporte</strong> (<em>Support Vector Machines</em>, <strong>SVM</strong>) separan un grupo dado de datos de entrenamiento etiquetados binarios mediante un hiperplano que está a una distancia máxima de ellos (conocido como el <strong>hiperplano de margen máximo</strong>). De esta forma, elementos que son etiquetados con una categoría estarán a un lado del hiperplano y los casos que se encuentren en la otra categoría se situarán al otro lado. Al vector formado por los puntos más cercanos al hiperplano se le llama <strong>vector de soporte</strong>.</p>
+<p><img alt="" src="../images/05/svm.png" /></p>
 
 
 

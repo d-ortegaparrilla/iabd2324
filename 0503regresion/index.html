@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
+      <link rel="stylesheet" href="../extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -71,6 +73,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#algoritmos-de-regresion" class="md-skip">
+          Saltar a contenido
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -894,6 +901,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Algoritmos de regresión
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -904,6 +924,39 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regresion-lineal" class="md-nav__link">
+    Regresión lineal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regresion-polinomica" class="md-nav__link">
+    Regresión polinómica
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -942,6 +995,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regresion-lineal" class="md-nav__link">
+    Regresión lineal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regresion-polinomica" class="md-nav__link">
+    Regresión polinómica
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -956,9 +1033,25 @@
                   
 
 
-  <h1>Algoritmos de regresión</h1>
-
-
+<h1 id="algoritmos-de-regresion">Algoritmos de regresión</h1>
+<p>Los modelos de regresión se utilizan para pronosticar variables objetivo en una escala continua, lo que los hace atractivos para abordar muchas cuestiones de la ciencia. También tiene aplicaciones en la industria, como son la comprensión de las relaciones entre variables, la evaluación de tendencias o la realización de previsiones. Un ejemplo es el pronóstico de las ventas de una empresa en los meses futuros.</p>
+<h2 id="regresion-lineal">Regresión lineal</h2>
+<p>La <strong>regresión lineal simple</strong> (univariante) es modelar la relación entre una única característica (variable explicativa, x) y un objetivo de valor continuo (variable de respuesta, y). La ecuación de un modelo lineal con una sola variable explicativa se define como sigue:
+$$ y = w_1 x + b $$</p>
+<p>, siendo $ b $, la intersección con el eje $ y $, y $ w_i $ el coeficiente de peso de la variable explicativa.</p>
+<p>Basándonos en la ecuación lineal que hemos definido anteriormente, la regresión lineal puede entenderse como la búsqueda de la línea recta que mejor se ajusta a los ejemplos de entrenamiento.</p>
+<p><img alt="" src="../images/05/simplelinearregression.webp" /></p>
+<p>Podemos generalizar el modelo de regresión lineal a múltiples variables explicativas, denominándose este proceso <strong>regresión lineal múltiple</strong>.
+$$ y = w_1 x_1 + ... + w_m x_m + b $$</p>
+<p>A continuación se muestra una imagen de una regresión lineal múltiple con 2 característica y 1 valor objetivo.</p>
+<p><img alt="" src="../images/05/multiplelinearregression.webp" /></p>
+<h2 id="regresion-polinomica">Regresión polinómica</h2>
+<p>Se puede utilizar un modelo de <strong>regresión polinómica</strong> añadiendo términos polinómicos:
+$$ y = w_1 x + w_2 x^2 + … + w_d x^d + b $$</p>
+<p>A continuación se muestra una imagen de una regresión polinómica simple con 1 característica y 1 valor objetivo.</p>
+<p><img alt="" src="../images/05/quadraticregression.webp" /></p>
+<h1 id="uso-de-algoritmos-de-clasificacion-en-tareas-de-regresion">Uso de algoritmos de clasificación en tareas de regresión</h1>
+<p>Los algoritmos vistos en el apartado de clasificación pueden utilizarse, con ligeras modificaciones, a algoritmos de regresión para la predicción de valores continuos, las <strong>máquinas de vector de soporte aplicadas a la regresión</strong> (<strong>SVR</strong>), el método de <strong>vecinos más cercanos</strong> (<strong>k-NN</strong>), <strong>árboles de decisión</strong> (<strong>DTR</strong>) y <strong>bosques aleatorios</strong> (<strong>RFR</strong>).</p>
 
 
 

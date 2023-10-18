@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/0502clasificacion/">
+        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/0602met_regresion/">
       
       
-        <link rel="prev" href="../0501introduccion/">
+        <link rel="prev" href="../0601introduccion/">
       
       
-        <link rel="next" href="../0503regresion/">
+        <link rel="next" href="../0603met_clasificacion/">
       
       
       <link rel="icon" href="../images/favicon.jpeg">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Algoritmos de clasificación - Inteligencia Artificial</title>
+        <title>Métricas para modelos de regresión - Inteligencia Artificial</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algoritmos-de-clasificacion" class="md-skip">
+        <a href="#metricas-para-modelos-de-regresion" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Algoritmos de clasificación
+              Métricas para modelos de regresión
             
           </span>
         </div>
@@ -817,20 +817,18 @@
                 
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -844,7 +842,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Algoritmos
@@ -875,29 +873,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Algoritmos de clasificación
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../0502clasificacion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -906,68 +884,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#k-vecinos-mas-proximos" class="md-nav__link">
-    K vecinos más próximos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arboles-de-decision" class="md-nav__link">
-    Árboles de decisión
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmo-clasificador-bayesiano-ingenuo" class="md-nav__link">
-    Algoritmo clasificador bayesiano ingenuo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analisis-discriminante" class="md-nav__link">
-    Análisis discriminante
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regresion-logistica" class="md-nav__link">
-    Regresión logística
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maquinas-de-vector-soporte" class="md-nav__link">
-    Máquinas de vector soporte
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1005,18 +921,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -1030,7 +948,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Validación de modelos
@@ -1061,9 +979,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../0602met_regresion/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Métricas para modelos de regresión
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1072,6 +1010,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#error-absoluto-medio-mae" class="md-nav__link">
+    Error absoluto medio (MAE)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-cuadratico-medio-mse" class="md-nav__link">
+    Error cuadrático medio (MSE)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r-cuadrado" class="md-nav__link">
+    R cuadrado
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1139,43 +1118,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#k-vecinos-mas-proximos" class="md-nav__link">
-    K vecinos más próximos
+  <a href="#error-absoluto-medio-mae" class="md-nav__link">
+    Error absoluto medio (MAE)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#arboles-de-decision" class="md-nav__link">
-    Árboles de decisión
+  <a href="#error-cuadratico-medio-mse" class="md-nav__link">
+    Error cuadrático medio (MSE)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algoritmo-clasificador-bayesiano-ingenuo" class="md-nav__link">
-    Algoritmo clasificador bayesiano ingenuo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analisis-discriminante" class="md-nav__link">
-    Análisis discriminante
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regresion-logistica" class="md-nav__link">
-    Regresión logística
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maquinas-de-vector-soporte" class="md-nav__link">
-    Máquinas de vector soporte
+  <a href="#r-cuadrado" class="md-nav__link">
+    R cuadrado
   </a>
   
 </li>
@@ -1195,61 +1153,21 @@
                   
 
 
-<h1 id="algoritmos-de-clasificacion">Algoritmos de clasificación</h1>
-<p>Una tarea de <strong>clasificación</strong> se emplea para predecir una categoría, con un conjunto finito de valores posibles. En el caso de dos posibilidades se trata de <strong>clasificación binaria</strong>; y si se quiere predecir más de dos categorías, se trata de <strong>clasificación multiclase</strong>. </p>
-<p>La <strong>frontera de decisión</strong> (<em>decision boundary</em>) separa las diferentes clases predichas. Si un algoritmo clasificador aprende una frontera de decisión de tipo lineal, se dice que es un <strong>clasificador lineal</strong> (<em>lineal classifier</em>).</p>
-<p>Las siguientes imágenes muestra un clasificador lineal frente a un no lineal para una tarea de clasificación binaria (2 clases), que utiliza 2 características. </p>
-<p><img alt="" src="../images/05/classification1.png" /></p>
-<p>Existen clases en la que no es posible utilizar clasificadores lineales con éxito, ya que no son linealmente separables. La siguiente imagen ejemplifica esto:</p>
-<p><img alt="" src="../images/05/classification2.png" /></p>
-<p>En el caso del dataset Iris tenemos 3 categorías posibles, por lo que tendríamos un clasificador multiclase.</p>
-<p><img alt="" src="../images/05/classification3.png" /></p>
-<p>En los anteriores ejemplos se muestran clasificadores que utilizan 2 características, lo que permite representarlos en un plano (ancho por alto). En estos las fronteras de decisión de los clasificadores lineales se visualizan como líneas rectas. 
-Esto se puede generalizar para clasificadores que utilicen más 2 características. Con 5 características, el espacio de valores de X es en 5 dimensiones. En este caso, la frontera de decisión sería un hiperplano en 4 dimensiones que separaría el espacio en 2 mitades.</p>
-<p>La siguiente imagen muestra un clasificador binario con 3 características:</p>
-<p><img alt="" src="../images/05/classification4.png" /></p>
-<p>A continuación, se detallarán algunos algoritmos de clasificación.</p>
-<h2 id="k-vecinos-mas-proximos">K vecinos más próximos</h2>
-<p>El algoritmo de <strong>k vecinos más próximos</strong> (<em>k-nearest neighbors</em>, <strong>k-NN</strong>), es un algoritmo supervisado basando en instancias, sin que sea necesario que haya una concordancia exacta con los datos del conjunto de entrenamiento, de forma que el algoritmo clasifica el nuevo elemento en el conjunto que le corresponde buscando en las observaciones más cercanas. Para ello, calcula las distancias a los elementos y las ordena de menor a mayor para asignar el grupo que tenga una frecuencia más alta con las distancias menores.</p>
-<p>Este método es muy sensible al parámetro <em>k</em>, que indica el número de vecinos seleccionado y la métrica de distancia utilizada. El valor de <em>k</em> se fija tras realizar varias pruebas o mediante una validación cruzada. La siguiente imagen muestra cómo cambia la frontera de decisión conforme se cambia el parámetro <em>k</em>.</p>
-<p><img alt="" src="../images/05/kneighbors.png" /></p>
-<p>Como mayor inconveniente, este método necesita todo el conjunto de datos de entrenamiento para cada elemento nuevo a clasificar, por lo que requiere gran cantidad de memoria y consumo de procesamiento. Por este motivo, es recomendable para conjuntos pequeños.</p>
-<h2 id="arboles-de-decision">Árboles de decisión</h2>
-<p>Los <strong>árboles de decisión</strong> (<em>Decision Tree</em>, <strong>DT</strong>) son algoritmos para hacer clasificaciones realizando particiones sucesivas, mediante la técnica denominada <strong>segmentación jerárquica</strong>, agrupando observaciones similares. Analizan situaciones que presentan varias posibilidades de decisión y toman la que consideran mejor.</p>
-<p>El método, cuando se encuentra ante una decisión, utiliza la información del conjunto de datos de entrenamiento para buscar una correlación entre el elemento nuevo y los conocidos y así poder elegir la opción correcta. 
-Los árboles de decisión están formados por los siguientes componentes:</p>
-<ul>
-<li><strong>Nodos</strong>: son las variables de entrada y plantean las opciones de decisión, siendo el primer elemento del árbol el nodo raíz.</li>
-<li><strong>Ramas</strong>: indican los valores que pueden tomar las variables de entrada y unen los nodos entre sí.</li>
-<li><strong>Hojas</strong>: muestran los valores de las variables de salida, es decir, el resultado de la decisión.</li>
-</ul>
-<p>Algunos de los algoritmos de árboles de decisión más utilizados son los siguientes:</p>
-<ul>
-<li>
-<p>El algoritmo de <strong>árboles de clasificación y regresión</strong> (<strong>CART</strong>) genera árboles de decisión binarios, por lo que cada nodo se divide en dos ramas.
-  <img alt="" src="../images/05/decisiontree.jpg" /></p>
-</li>
-<li>
-<p>Los algoritmos <strong>C5.0</strong>, que es una evolución del <strong>C4.5</strong> que a su vez los es de <strong>ID3</strong>, forman una familia de algoritmos de los más utilizados en tareas de clasificación.</p>
-</li>
-<li>El algoritmo de <strong>bosque aleatorio</strong> (<em>Random Forest</em>, <strong>RF</strong>) combina varios árboles con distinta cantidad <em>k</em> de características y la salida de cada uno de ellos proporciona un voto, siendo la opción más votada la elegida como la respuesta del modelo.
-  <img alt="" src="../images/05/randomforest.png" /></li>
-</ul>
-<p>Este método no es apropiado para conjuntos de datos pequeños y requiere mucho tiempo durante la fase de entrenamiento.</p>
-<h2 id="algoritmo-clasificador-bayesiano-ingenuo">Algoritmo clasificador bayesiano ingenuo</h2>
-<p>El algoritmo clasificador <strong>bayesiano ingenuo</strong> (<em>Naïve Bayes</em>) es una técnica de clasificación probabilística que está fundamentada en el teorema de Bayes y está basada en la idea de que el mejor modelo es el más probable, asumiendo que la ocurrencia de una determinada característica es independiente de que sucedan las otras particularidades. Este es el motivo por el que se le llama ingenuo.</p>
-<p>Solo requiere un pequeño conjunto de datos de entrenamiento para realizar la estimación de los parámetros necesarios: medias y varianzas.</p>
-<p>Es un algoritmo simple y efectivo que se utiliza frecuentemente en la clasificación de texto.</p>
-<h2 id="analisis-discriminante">Análisis discriminante</h2>
-<p>El <strong>análisis discriminante lineal</strong> (<em>Lineal Discriminant Analysis</em>, <strong>LDA</strong>) calcula unas funciones lineales a partir de los atributos de su perfil, donde la función que alcanza mayor valor define el grupo al que pertenece el nuevo elemento de forma más probable. Cada elemento solamente puede pertenecer a un único grupo.
-<img alt="" src="../images/05/LDA.png" /></p>
-<h2 id="regresion-logistica">Regresión logística</h2>
-<p>Asigna una probabilidad entre 0 y 1 de que una instancia pertenezca a una categoría. En el caso de una clasificación binaria una instancia se clasificaría a una categoría cuando esta probabilidad sea &gt;= 0.5.</p>
-<p>Se representa mediante una curva formada con forma de S, llamada función sigmoidea, que es una función matemática que se utiliza para asignar los valores predichos a las probabilidades.</p>
-<p><img alt="" src="../images/05/logistic.png" /></p>
-<h2 id="maquinas-de-vector-soporte">Máquinas de vector soporte</h2>
-<p>Las <strong>máquinas de vector soporte</strong> (<em>Support Vector Machines</em>, <strong>SVM</strong>) separan un grupo dado de datos de entrenamiento etiquetados binarios mediante un hiperplano que está a una distancia máxima de ellos (conocido como el <strong>hiperplano de margen máximo</strong>). De esta forma, elementos que son etiquetados con una categoría estarán a un lado del hiperplano y los casos que se encuentren en la otra categoría se situarán al otro lado. Al vector formado por los puntos más cercanos al hiperplano se le llama <strong>vector de soporte</strong>.</p>
-<p><img alt="" src="../images/05/svm.png" /></p>
+<h1 id="metricas-para-modelos-de-regresion">Métricas para modelos de regresión</h1>
+<p>Los modelos de regresión se construyen para variables continuas. </p>
+<h2 id="error-absoluto-medio-mae">Error absoluto medio (MAE)</h2>
+<p>Para evaluar el desempeño de un modelo de regresión, podemos utilizar el <strong>error absoluto medio</strong> (<em>Mean Absolute Error</em>, MAE). Es la métrica de error más simple e intuitiva y es la diferencia absoluta promedio entre las predicciones $ y_i $ y los valores reales $ \hat{y_i} $. </p>
+<p>$$ MAE = {\sum_{i=1}^n \lvert y_i - \hat{y}_i \rvert \over n} $$</p>
+<p>Si un perro tuviera seis cachorros, pero hubieras predicho solo cuatro, la diferencia absoluta sería dos. Esta métrica trata todos los puntos por igual y no es sensible a los valores atípicos. Cuando se trata de aplicaciones en las que no queremos que los errores grandes tengan un impacto importante, se puede utilizar el error absoluto medio. Un ejemplo podría ser predecir la factura mensual de gasolina de un automóvil, cuando un valor atípico puede haber sido causado por un único viaje por carretera.</p>
+<h2 id="error-cuadratico-medio-mse">Error cuadrático medio (MSE)</h2>
+<p>El siguiente es el <strong>error cuadrático medio</strong> (<em>Mean Squared Error</em>, MSE). Es la métrica de error de regresión más utilizada para modelos de regresión. Se calcula de manera similar al error absoluto medio, pero esta vez elevamos al cuadrado el término de diferencia. </p>
+<p>$$ MSE = {\sum_{i=1}^n (y_i - \hat{y}_i)^2 \over n} $$</p>
+<p>El MSE permite que errores mayores tengan un mayor impacto en el modelo. Utilizando el ejemplo anterior del automóvil, si se supiera que una vez al año puede realizar un viaje por carretera, se puedea esperar tener de vez en cuando un error grande y se desee que el modelo se recupere de esos viajes.</p>
+<p>También se suele utilizar la <strong>raíz cuadrada del error cuadrático medio</strong>, (<em>Root Mean Squared Error</em>, RMSE).</p>
+<p>$$ RMSE = \sqrt{MSE} $$</p>
+<h2 id="r-cuadrado">R cuadrado</h2>
+<p><strong>R cuadrado</strong> (<em>R-squared</em>) es una métrica que cuantifica la cantidad de varianza en la variable objetivo que se explica por las características. Los valores pueden variar entre 0 y 1, donde uno significa que las características explican completamente la variación del objetivo. A continuación hay dos gráficos que visualizan el R cuadrado alto y bajo respectivamente:</p>
+<p><img alt="" src="../images/06/r2.png" /></p>
 
 
 

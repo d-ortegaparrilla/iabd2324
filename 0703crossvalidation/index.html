@@ -14,6 +14,8 @@
         <link rel="prev" href="../0702retencion/">
       
       
+        <link rel="next" href="../0801introduccion/">
+      
       
       <link rel="icon" href="../images/favicon.jpeg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
@@ -1179,6 +1181,110 @@
 
               
             
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ajuste de hiperparámetros
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ajuste de hiperparámetros
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0801introduccion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0802curvas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Curvas de aprendizaje y validación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0803red/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Búsqueda en la red
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1245,7 +1351,7 @@
 <p>Una desventaja del método de retención es que la estimación del rendimiento puede ser muy sensible a la forma en que dividimos el conjunto de datos de entrenamiento en subconjuntos de entrenamiento y de validación; la estimación variará para diferentes ejemplos de los datos. </p>
 <p>En la <strong>validación cruzada con k grupos</strong> <em>k-fold cross validation</em> dividimos aleatoriamente el conjunto de datos de entrenamiento en <em>k</em> grupos sin sustitución. En este caso, se utilizan <em>k -1</em> grupos, llamados <strong>grupos de entrenamiento</strong>, para el entrenamiento del modelo, y un grupo, llamado <strong>grupo de prueba</strong>, para la evaluación del rendimiento. Este procedimiento se repite <em>k</em> veces, de modo que se obtienen <em>k</em> modelos y estimaciones de rendimiento.</p>
 <p>A continuación, calculamos el rendimiento medio de los modelos basándonos en las diferentes iteraciones de prueba independientes para obtener una estimación del rendimiento que sea menos sensible a la subpartición de los datos de entrenamiento en comparación con el método de retención. Normalmente, utilizamos la validación cruzada para el ajuste del modelo, es decir, para encontrar los valores óptims de los hiperparámetros que producen un rendimiento de generalización satisfactorio.</p>
-<p><img alt="" src="../images/08/cv.png" /></p>
+<p><img alt="" src="../images/07/cv.png" /></p>
 <p>Una vez que hayamos encontrado valores satisfactorios de los hiperparámetros, podemos volver a entrenar el modelo con el conjunto de datos de entrenamiento completo y obtener una estimación final del rendimiento utilizando el conjunto de datos de prueba independiente. La razón para ajustar un modelo a todo el conjunto de datos de entrenamiento después de la validación cruzada es que, en primer lugar, normalmente estamos interesados en un único modelo final, al que tras proporcionarle más ejemplos de entrenamiento, tendrá como resultado un modelo más preciso y robusto.</p>
 <h2 id="validacion-cruzada-dejando-uno-fuera">Validación cruzada dejando uno fuera</h2>
 <p>Un caso especial de validación cruzada de k grupos es el método de <strong>validación cruzada dejando uno fuera</strong> (<em>Leave One Out Cross Validation</em>, LOOCV).</p>

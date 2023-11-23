@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/">
+        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/aas/validacion/met_clasificacion/">
       
       
+        <link rel="prev" href="../met_regresion/">
       
-        <link rel="next" href="ia/introduccion/introduccion/">
+      
+        <link rel="next" href="../../particion/introduccion/">
       
       
-      <link rel="icon" href="images/favicon.jpeg">
+      <link rel="icon" href="../../../images/favicon.jpeg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
-        <title>Inteligencia Artificial</title>
+        <title>Métricas para modelos de clasificación - Inteligencia Artificial</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.d451bc0e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.d451bc0e.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a5377069.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -48,9 +50,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="extra.css">
+      <link rel="stylesheet" href="../../../extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#inicio" class="md-skip">
+        <a href="#metricas-para-modelos-de-clasificacion" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -91,9 +93,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="." title="Inteligencia Artificial" class="md-header__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
+    <a href="../../.." title="Inteligencia Artificial" class="md-header__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
       
-  <img src="images/favicon.jpeg" alt="logo">
+  <img src="../../../images/favicon.jpeg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Inicio
+              Métricas para modelos de clasificación
             
           </span>
         </div>
@@ -184,9 +186,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
+    <a href="../../.." title="Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
       
-  <img src="images/favicon.jpeg" alt="logo">
+  <img src="../../../images/favicon.jpeg" alt="logo">
 
     </a>
     Inteligencia Artificial
@@ -198,29 +200,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Inicio
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -229,33 +211,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#indice-de-materiales" class="md-nav__link">
-    Índice de materiales
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -338,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/introduccion/" class="md-nav__link">
+      <a href="../../../ia/introduccion/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -358,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/definicion/" class="md-nav__link">
+      <a href="../../../ia/introduccion/definicion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -378,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/clases/" class="md-nav__link">
+      <a href="../../../ia/introduccion/clases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -398,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/historia/" class="md-nav__link">
+      <a href="../../../ia/introduccion/historia/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -418,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/campos/" class="md-nav__link">
+      <a href="../../../ia/introduccion/campos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/introduccion/" class="md-nav__link">
+      <a href="../../../ia/modelos/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -502,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/problemas/" class="md-nav__link">
+      <a href="../../../ia/modelos/problemas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/expertos/" class="md-nav__link">
+      <a href="../../../ia/modelos/expertos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/impreciso/" class="md-nav__link">
+      <a href="../../../ia/modelos/impreciso/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/machine/" class="md-nav__link">
+      <a href="../../../ia/modelos/machine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/introduccion/" class="md-nav__link">
+      <a href="../../../ia/tipos_aa/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/supervision/" class="md-nav__link">
+      <a href="../../../ia/tipos_aa/supervision/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -666,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/lotes/" class="md-nav__link">
+      <a href="../../../ia/tipos_aa/lotes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -686,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/instancias/" class="md-nav__link">
+      <a href="../../../ia/tipos_aa/instancias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/introduccion/" class="md-nav__link">
+      <a href="../../../ia/fases_aa/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/preprocesamiento/" class="md-nav__link">
+      <a href="../../../ia/fases_aa/preprocesamiento/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -790,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/entrenamiento/" class="md-nav__link">
+      <a href="../../../ia/fases_aa/entrenamiento/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/evaluacion/" class="md-nav__link">
+      <a href="../../../ia/fases_aa/evaluacion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -843,18 +798,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -868,7 +825,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             2. Aprendizaje automático supervisado
@@ -917,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/algoritmos/introduccion/" class="md-nav__link">
+      <a href="../../algoritmos/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -937,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/algoritmos/clasificacion/" class="md-nav__link">
+      <a href="../../algoritmos/clasificacion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -957,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/algoritmos/regresion/" class="md-nav__link">
+      <a href="../../algoritmos/regresion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,18 +940,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -1008,7 +967,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Validación de modelos
@@ -1021,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/validacion/introduccion/" class="md-nav__link">
+      <a href="../introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1041,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/validacion/met_regresion/" class="md-nav__link">
+      <a href="../met_regresion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1059,9 +1018,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="aas/validacion/met_clasificacion/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Métricas para modelos de clasificación
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1070,6 +1049,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#matriz-de-confusion" class="md-nav__link">
+    Matriz de confusión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exactitud" class="md-nav__link">
+    Exactitud
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#precision" class="md-nav__link">
+    Precisión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensibilidad" class="md-nav__link">
+    Sensibilidad
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1125,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/particion/introduccion/" class="md-nav__link">
+      <a href="../../particion/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1145,7 +1172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/particion/retencion/" class="md-nav__link">
+      <a href="../../particion/retencion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1165,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/particion/crossvalidation/" class="md-nav__link">
+      <a href="../../particion/crossvalidation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1229,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/hiperparametros/introduccion/" class="md-nav__link">
+      <a href="../../hiperparametros/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1249,7 +1276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/hiperparametros/curvas/" class="md-nav__link">
+      <a href="../../hiperparametros/curvas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1269,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/hiperparametros/red/" class="md-nav__link">
+      <a href="../../hiperparametros/red/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1333,7 +1360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/introduccion/" class="md-nav__link">
+      <a href="../../ensamblaje/introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1353,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/votacion/" class="md-nav__link">
+      <a href="../../ensamblaje/votacion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1373,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/bagging/" class="md-nav__link">
+      <a href="../../ensamblaje/bagging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1393,7 +1420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/boosting/" class="md-nav__link">
+      <a href="../../ensamblaje/boosting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1449,8 +1476,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#indice-de-materiales" class="md-nav__link">
-    Índice de materiales
+  <a href="#matriz-de-confusion" class="md-nav__link">
+    Matriz de confusión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exactitud" class="md-nav__link">
+    Exactitud
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#precision" class="md-nav__link">
+    Precisión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensibilidad" class="md-nav__link">
+    Sensibilidad
   </a>
   
 </li>
@@ -1470,14 +1518,22 @@
                   
 
 
-<h1 id="inicio">Inicio</h1>
-<p>Apuntes creados para el curso de especialización en Inteligencia Artificial y Big Data (IABD) impartido en el <a href="https://portal.edu.gva.es/03013224">IES Severo Ochoa</a> de Elche.</p>
-<p>El curriculum del curso de especialización viene fijado por el <a href="https://www.boe.es/eli/es/rd/2021/04/20/279/dof/spa/pdf">Real Decreto 279/2021</a>.</p>
-<h2 id="indice-de-materiales">Índice de materiales</h2>
-<ul>
-<li><a href="ia/introduccion/introduccion/">Hola IA</a></li>
-<li><a href="aas/algoritmos/introduccion/">Aprendizaje supervisado</a></li>
-</ul>
+<h1 id="metricas-para-modelos-de-clasificacion">Métricas para modelos de clasificación</h1>
+<p>Las métricas de precisión de la clasificación son bastante diferentes a las de regresión. Como se ha comentado anteriormente, los modelos de clasificación predicen en qué categoría cae una observación. Hay muchas métricas de precisión disponibles: precisión, sensibilidad, exactitud, puntuación F1, etc.</p>
+<p>Nos centraremos en la precisión, la recuperación y la exactitud. Ya que cada uno de estos es fácil de entender y tiene aplicaciones muy prácticas. Una forma de calcular estas métricas es utilizar los valores de una matriz de confusión.</p>
+<h2 id="matriz-de-confusion">Matriz de confusión</h2>
+<p>Al hacer predicciones, especialmente si la clasificación es binaria, la <strong>matriz de confusión</strong> (<em>confusion matrix</em>) es uno de los resultados más útiles a revisar en primera instancia. Cuando tenemos un resultado binario, la matriz de confusión es una matriz de 2x2 que muestra cómo se ajustaron las predicciones en los dos resultados. Por ejemplo, para predicciones de 0 que en realidad fueron 0 (o verdaderos negativos), observamos la posición [0, 0] de la matriz. Todas las métricas de precisión mencionados anterioremente se pueden calcular utilizando los valores de esta matriz y es una excelente manera de visualizar los resultados iniciales de un modelo de clasificación.</p>
+<p>La siguiente imagen muestra un ejemplo de una matriz de confusión para una clasificación binaria.</p>
+<p><img alt="" src="../images/confusion_matrix.png" /></p>
+<h2 id="exactitud">Exactitud</h2>
+<p>La <strong>exactitud</strong> (<em>accuracy</em>) es la métrica más fácil de entender y representa la capacidad general de un modelo para predecir correctamente la clasificación correcta. Usando la matriz de confusión, se suman los valores que se predijeron como 0 y que en realidad son 0 (verdaderos negativos), a los valores que se predice que son 1 y que son 1 (verdaderos positivos), y luego dividimos por el número total de observaciones. En el ejemplo anterior, la exactitud es del 85%.</p>
+<p><img alt="" src="../images/accuracy.png" /></p>
+<h2 id="precision">Precisión</h2>
+<p>La <strong>precisión</strong> (<em>precision</em>) es el número de verdaderos positivos entre todos los valores positivos predichos. En el ejemplo anterior se predijeron correctamente 62 valores verdaderos pero también se predijo 7 falsos positivos. Por tanto, la precisión es 62 dividido por 69. La precisión se utiliza cuando no queremos sobrepredecir valores positivos. Si el coste de traer en avión a nuevos empleados potenciales es muy elevado, es posible que una empresa solo tenga entrevistas con personas que realmente creen que se unirán a su empresa. En los datos del ejemplo, casi 9 de cada 10 predichos se habrían unido a la empresa.</p>
+<p><img alt="" src="../images/precision.png" /></p>
+<h2 id="sensibilidad">Sensibilidad</h2>
+<p>La <strong>sensibilidad</strong> (<em>recall</em>) consiste en encontrar todos los valores positivos. En el anterior ejemplo se predijo correctamente 62 verdaderos positivos y se tuvo 8 falsos negativos. La sensibilidad es de 62 entre 70. La sensibilidad se utiliza cuando no podemos darnos el lujo de perder ningún valor positivo. Por ejemplo, incluso si un paciente tiene una pequeña probabilidad de tener cáncer, es posible que queramos realizarle pruebas adicionales. El coste de pasar por alto a un paciente que tiene cáncer es mucho mayor que el costo de exámenes de detección adicionales para ese paciente.</p>
+<p><img alt="" src="../images/recall.png" /></p>
 
 
 
@@ -1519,12 +1575,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide"], "search": "assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide"], "search": "../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="assets/javascripts/bundle.726fbb30.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.726fbb30.min.js"></script>
       
-        <script src="javascripts/katex.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       

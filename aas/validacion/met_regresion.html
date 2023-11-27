@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/index.html">
+        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/aas/validacion/met_regresion.html">
       
       
+        <link rel="prev" href="introduccion.html">
       
-        <link rel="next" href="ia/introduccion/introduccion.html">
+      
+        <link rel="next" href="met_clasificacion.html">
       
       
-      <link rel="icon" href="images/favicon.jpeg">
+      <link rel="icon" href="../../images/favicon.jpeg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
-        <title>Inteligencia Artificial</title>
+        <title>Métricas para modelos de regresión - Inteligencia Artificial</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.d451bc0e.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d451bc0e.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a5377069.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -48,7 +50,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#inicio" class="md-skip">
+        <a href="#metricas-para-modelos-de-regresion" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -89,9 +91,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="index.html" title="Inteligencia Artificial" class="md-header__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
+    <a href="../../index.html" title="Inteligencia Artificial" class="md-header__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
       
-  <img src="images/favicon.jpeg" alt="logo">
+  <img src="../../images/favicon.jpeg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Inicio
+              Métricas para modelos de regresión
             
           </span>
         </div>
@@ -182,9 +184,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
+    <a href="../../index.html" title="Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
       
-  <img src="images/favicon.jpeg" alt="logo">
+  <img src="../../images/favicon.jpeg" alt="logo">
 
     </a>
     Inteligencia Artificial
@@ -196,29 +198,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Inicio
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -227,33 +209,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#indice-de-materiales" class="md-nav__link">
-    Índice de materiales
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -336,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/introduccion.html" class="md-nav__link">
+      <a href="../../ia/introduccion/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -356,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/definicion.html" class="md-nav__link">
+      <a href="../../ia/introduccion/definicion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -376,7 +331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/clases.html" class="md-nav__link">
+      <a href="../../ia/introduccion/clases.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -396,7 +351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/historia.html" class="md-nav__link">
+      <a href="../../ia/introduccion/historia.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -416,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/introduccion/campos.html" class="md-nav__link">
+      <a href="../../ia/introduccion/campos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/introduccion.html" class="md-nav__link">
+      <a href="../../ia/modelos/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/problemas.html" class="md-nav__link">
+      <a href="../../ia/modelos/problemas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/expertos.html" class="md-nav__link">
+      <a href="../../ia/modelos/expertos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/impreciso.html" class="md-nav__link">
+      <a href="../../ia/modelos/impreciso.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -560,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/modelos/machine.html" class="md-nav__link">
+      <a href="../../ia/modelos/machine.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/introduccion.html" class="md-nav__link">
+      <a href="../../ia/tipos_aa/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -644,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/supervision.html" class="md-nav__link">
+      <a href="../../ia/tipos_aa/supervision.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -664,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/lotes.html" class="md-nav__link">
+      <a href="../../ia/tipos_aa/lotes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/tipos_aa/instancias.html" class="md-nav__link">
+      <a href="../../ia/tipos_aa/instancias.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -748,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/introduccion.html" class="md-nav__link">
+      <a href="../../ia/fases_aa/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/preprocesamiento.html" class="md-nav__link">
+      <a href="../../ia/fases_aa/preprocesamiento.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/entrenamiento.html" class="md-nav__link">
+      <a href="../../ia/fases_aa/entrenamiento.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -808,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ia/fases_aa/evaluacion.html" class="md-nav__link">
+      <a href="../../ia/fases_aa/evaluacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,18 +796,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -866,7 +823,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             2. Aprendizaje automático supervisado
@@ -915,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/algoritmos/introduccion.html" class="md-nav__link">
+      <a href="../algoritmos/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -935,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/algoritmos/clasificacion.html" class="md-nav__link">
+      <a href="../algoritmos/clasificacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -955,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/algoritmos/regresion.html" class="md-nav__link">
+      <a href="../algoritmos/regresion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -981,18 +938,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -1006,7 +965,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Validación de modelos
@@ -1019,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/validacion/introduccion.html" class="md-nav__link">
+      <a href="introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1037,9 +996,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="aas/validacion/met_regresion.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Métricas para modelos de regresión
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="met_regresion.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1048,6 +1027,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#error-absoluto-medio-mae" class="md-nav__link">
+    Error absoluto medio (MAE)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-cuadratico-medio-mse" class="md-nav__link">
+    Error cuadrático medio (MSE)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r-cuadrado" class="md-nav__link">
+    R cuadrado
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1059,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/validacion/met_clasificacion.html" class="md-nav__link">
+      <a href="met_clasificacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1123,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/particion/introduccion.html" class="md-nav__link">
+      <a href="../particion/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1143,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/particion/retencion.html" class="md-nav__link">
+      <a href="../particion/retencion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1163,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/particion/crossvalidation.html" class="md-nav__link">
+      <a href="../particion/crossvalidation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1227,7 +1247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/hiperparametros/introduccion.html" class="md-nav__link">
+      <a href="../hiperparametros/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1247,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/hiperparametros/curvas.html" class="md-nav__link">
+      <a href="../hiperparametros/curvas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1267,7 +1287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/hiperparametros/red.html" class="md-nav__link">
+      <a href="../hiperparametros/red.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1331,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/introduccion.html" class="md-nav__link">
+      <a href="../ensamblaje/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1351,7 +1371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/votacion.html" class="md-nav__link">
+      <a href="../ensamblaje/votacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1371,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/bagging.html" class="md-nav__link">
+      <a href="../ensamblaje/bagging.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1391,7 +1411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aas/ensamblaje/boosting.html" class="md-nav__link">
+      <a href="../ensamblaje/boosting.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1462,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mlops/introduccion.html" class="md-nav__link">
+      <a href="../../mlops/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1482,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mlops/ciclo.html" class="md-nav__link">
+      <a href="../../mlops/ciclo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1502,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mlops/disenyo.html" class="md-nav__link">
+      <a href="../../mlops/disenyo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1522,7 +1542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mlops/desarrollo.html" class="md-nav__link">
+      <a href="../../mlops/desarrollo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1542,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mlops/despliegue.html" class="md-nav__link">
+      <a href="../../mlops/despliegue.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1562,7 +1582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mlops/herramientas.html" class="md-nav__link">
+      <a href="../../mlops/herramientas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1610,8 +1630,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#indice-de-materiales" class="md-nav__link">
-    Índice de materiales
+  <a href="#error-absoluto-medio-mae" class="md-nav__link">
+    Error absoluto medio (MAE)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-cuadratico-medio-mse" class="md-nav__link">
+    Error cuadrático medio (MSE)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r-cuadrado" class="md-nav__link">
+    R cuadrado
   </a>
   
 </li>
@@ -1631,14 +1665,21 @@
                   
 
 
-<h1 id="inicio">Inicio</h1>
-<p>Apuntes creados para el curso de especialización en Inteligencia Artificial y Big Data (IABD) impartido en el <a href="https://portal.edu.gva.es/03013224">IES Severo Ochoa</a> de Elche.</p>
-<p>El curriculum del curso de especialización viene fijado por el <a href="https://www.boe.es/eli/es/rd/2021/04/20/279/dof/spa/pdf">Real Decreto 279/2021</a>.</p>
-<h2 id="indice-de-materiales">Índice de materiales</h2>
-<ul>
-<li><a href="ia/introduccion/introduccion.html">Hola IA</a></li>
-<li><a href="aas/algoritmos/introduccion.html">Aprendizaje supervisado</a></li>
-</ul>
+<h1 id="metricas-para-modelos-de-regresion">Métricas para modelos de regresión</h1>
+<p>Los modelos de regresión se construyen para variables continuas. </p>
+<h2 id="error-absoluto-medio-mae">Error absoluto medio (MAE)</h2>
+<p>Para evaluar el desempeño de un modelo de regresión, podemos utilizar el <strong>error absoluto medio</strong> (<em>Mean Absolute Error</em>, MAE). Es la métrica de error más simple e intuitiva y es la diferencia absoluta promedio entre las predicciones $ y_i $ y los valores reales $ \hat{y_i} $. </p>
+<p>$$ MAE = {\sum_{i=1}^n \lvert y_i - \hat{y}_i \rvert \over n} $$</p>
+<p>Si un perro tuviera seis cachorros, pero hubieras predicho solo cuatro, la diferencia absoluta sería dos. Esta métrica trata todos los puntos por igual y no es sensible a los valores atípicos. Cuando se trata de aplicaciones en las que no queremos que los errores grandes tengan un impacto importante, se puede utilizar el error absoluto medio. Un ejemplo podría ser predecir la factura mensual de gasolina de un automóvil, cuando un valor atípico puede haber sido causado por un único viaje por carretera.</p>
+<h2 id="error-cuadratico-medio-mse">Error cuadrático medio (MSE)</h2>
+<p>El siguiente es el <strong>error cuadrático medio</strong> (<em>Mean Squared Error</em>, MSE). Es la métrica de error de regresión más utilizada para modelos de regresión. Se calcula de manera similar al error absoluto medio, pero esta vez elevamos al cuadrado el término de diferencia. </p>
+<p>$$ MSE = {\sum_{i=1}^n (y_i - \hat{y}_i)^2 \over n} $$</p>
+<p>El MSE permite que errores mayores tengan un mayor impacto en el modelo. Utilizando el ejemplo anterior del automóvil, si se supiera que una vez al año puede realizar un viaje por carretera, se puedea esperar tener de vez en cuando un error grande y se desee que el modelo se recupere de esos viajes.</p>
+<p>También se suele utilizar la <strong>raíz cuadrada del error cuadrático medio</strong>, (<em>Root Mean Squared Error</em>, RMSE).</p>
+<p>$$ RMSE = \sqrt{MSE} $$</p>
+<h2 id="r-cuadrado">R cuadrado</h2>
+<p><strong>R cuadrado</strong> (<em>R-squared</em>) es una métrica que cuantifica la cantidad de varianza en la variable objetivo que se explica por las características. Los valores pueden variar entre 0 y 1, donde uno significa que las características explican completamente la variación del objetivo. A continuación hay dos gráficos que visualizan el R cuadrado alto y bajo respectivamente:</p>
+<p><img alt="" src="images/r2.png" /></p>
 
 
 
@@ -1680,12 +1721,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide"], "search": "assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="assets/javascripts/bundle.726fbb30.min.js"></script>
+      <script src="../../assets/javascripts/bundle.726fbb30.min.js"></script>
       
-        <script src="javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       

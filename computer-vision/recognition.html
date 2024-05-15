@@ -8,28 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/aans/clustering/kmeans.html">
+        <link rel="canonical" href="https://github.com/d-ortegaparrilla/iabd2324/computer-vision/recognition.html">
       
       
-        <link rel="prev" href="introduccion.html">
+        <link rel="prev" href="vit.html">
       
       
-        <link rel="next" href="jerarquico.html">
       
-      
-      <link rel="icon" href="../../images/favicon.jpeg">
+      <link rel="icon" href="../images/favicon.jpeg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
-        <title>Agrupamiento basado en prototipos - Inteligencia Artificial</title>
+        <title>Reconocimiento de objetos - Inteligencia Artificial</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.d451bc0e.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d451bc0e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -50,7 +48,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#agrupamiento-basado-en-prototipos" class="md-skip">
+        <a href="#reconocimiento-de-objetos" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -91,9 +89,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../../index.html" title="Inteligencia Artificial" class="md-header__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
+    <a href="../index.html" title="Inteligencia Artificial" class="md-header__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
       
-  <img src="../../images/favicon.jpeg" alt="logo">
+  <img src="../images/favicon.jpeg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Agrupamiento basado en prototipos
+              Reconocimiento de objetos
             
           </span>
         </div>
@@ -184,9 +182,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
+    <a href="../index.html" title="Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Inteligencia Artificial" data-md-component="logo">
       
-  <img src="../../images/favicon.jpeg" alt="logo">
+  <img src="../images/favicon.jpeg" alt="logo">
 
     </a>
     Inteligencia Artificial
@@ -200,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -291,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/introduccion/introduccion.html" class="md-nav__link">
+      <a href="../ia/introduccion/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -311,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/introduccion/definicion.html" class="md-nav__link">
+      <a href="../ia/introduccion/definicion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -331,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/introduccion/clases.html" class="md-nav__link">
+      <a href="../ia/introduccion/clases.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -351,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/introduccion/historia.html" class="md-nav__link">
+      <a href="../ia/introduccion/historia.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -371,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/introduccion/campos.html" class="md-nav__link">
+      <a href="../ia/introduccion/campos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -435,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/modelos/introduccion.html" class="md-nav__link">
+      <a href="../ia/modelos/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -455,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/modelos/problemas.html" class="md-nav__link">
+      <a href="../ia/modelos/problemas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/modelos/expertos.html" class="md-nav__link">
+      <a href="../ia/modelos/expertos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/modelos/impreciso.html" class="md-nav__link">
+      <a href="../ia/modelos/impreciso.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -515,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/modelos/machine.html" class="md-nav__link">
+      <a href="../ia/modelos/machine.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/tipos_aa/introduccion.html" class="md-nav__link">
+      <a href="../ia/tipos_aa/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -599,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/tipos_aa/supervision.html" class="md-nav__link">
+      <a href="../ia/tipos_aa/supervision.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -619,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/tipos_aa/lotes.html" class="md-nav__link">
+      <a href="../ia/tipos_aa/lotes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/tipos_aa/instancias.html" class="md-nav__link">
+      <a href="../ia/tipos_aa/instancias.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/fases_aa/introduccion.html" class="md-nav__link">
+      <a href="../ia/fases_aa/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/fases_aa/preprocesamiento.html" class="md-nav__link">
+      <a href="../ia/fases_aa/preprocesamiento.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -743,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/fases_aa/entrenamiento.html" class="md-nav__link">
+      <a href="../ia/fases_aa/entrenamiento.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ia/fases_aa/evaluacion.html" class="md-nav__link">
+      <a href="../ia/fases_aa/evaluacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -870,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/algoritmos/introduccion.html" class="md-nav__link">
+      <a href="../aas/algoritmos/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -890,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/algoritmos/clasificacion.html" class="md-nav__link">
+      <a href="../aas/algoritmos/clasificacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -910,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/algoritmos/regresion.html" class="md-nav__link">
+      <a href="../aas/algoritmos/regresion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -974,7 +972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/validacion/introduccion.html" class="md-nav__link">
+      <a href="../aas/validacion/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -994,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/validacion/met_regresion.html" class="md-nav__link">
+      <a href="../aas/validacion/met_regresion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1014,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/validacion/met_clasificacion.html" class="md-nav__link">
+      <a href="../aas/validacion/met_clasificacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1078,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/particion/introduccion.html" class="md-nav__link">
+      <a href="../aas/particion/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1098,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/particion/retencion.html" class="md-nav__link">
+      <a href="../aas/particion/retencion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1118,7 +1116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/particion/crossvalidation.html" class="md-nav__link">
+      <a href="../aas/particion/crossvalidation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1182,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/hiperparametros/introduccion.html" class="md-nav__link">
+      <a href="../aas/hiperparametros/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1202,7 +1200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/hiperparametros/curvas.html" class="md-nav__link">
+      <a href="../aas/hiperparametros/curvas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1222,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/hiperparametros/red.html" class="md-nav__link">
+      <a href="../aas/hiperparametros/red.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1286,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/ensamblaje/introduccion.html" class="md-nav__link">
+      <a href="../aas/ensamblaje/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1306,7 +1304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/ensamblaje/votacion.html" class="md-nav__link">
+      <a href="../aas/ensamblaje/votacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/ensamblaje/bagging.html" class="md-nav__link">
+      <a href="../aas/ensamblaje/bagging.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1346,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aas/ensamblaje/boosting.html" class="md-nav__link">
+      <a href="../aas/ensamblaje/boosting.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1417,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mlops/introduccion.html" class="md-nav__link">
+      <a href="../mlops/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1437,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mlops/ciclo.html" class="md-nav__link">
+      <a href="../mlops/ciclo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1457,7 +1455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mlops/disenyo.html" class="md-nav__link">
+      <a href="../mlops/disenyo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1477,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mlops/desarrollo.html" class="md-nav__link">
+      <a href="../mlops/desarrollo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1497,7 +1495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mlops/despliegue.html" class="md-nav__link">
+      <a href="../mlops/despliegue.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1517,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mlops/herramientas.html" class="md-nav__link">
+      <a href="../mlops/herramientas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1537,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mlops/wandb.html" class="md-nav__link">
+      <a href="../mlops/wandb.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1562,20 +1560,18 @@
       
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1589,7 +1585,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             4. Aprendizaje no supervisado
@@ -1602,7 +1598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduccion.html" class="md-nav__link">
+      <a href="../aans/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1620,20 +1616,18 @@
                 
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -1647,7 +1641,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Clustering
@@ -1660,7 +1654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="introduccion.html" class="md-nav__link">
+      <a href="../aans/clustering/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1678,29 +1672,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Agrupamiento basado en prototipos
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="kmeans.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../aans/clustering/kmeans.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1709,40 +1683,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmo-k-means" class="md-nav__link">
-    Algoritmo k-means
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#numero-optimo-de-clusteres" class="md-nav__link">
-    Número óptimo de clústeres
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1754,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="jerarquico.html" class="md-nav__link">
+      <a href="../aans/clustering/jerarquico.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1774,7 +1714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dbscan.html" class="md-nav__link">
+      <a href="../aans/clustering/dbscan.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1838,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dimensionalidad/dimensionalidad.html" class="md-nav__link">
+      <a href="../aans/dimensionalidad/dimensionalidad.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1858,7 +1798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dimensionalidad/proyeccion.html" class="md-nav__link">
+      <a href="../aans/dimensionalidad/proyeccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1878,7 +1818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dimensionalidad/variedades.html" class="md-nav__link">
+      <a href="../aans/dimensionalidad/variedades.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1942,7 +1882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../anomalias/introduccion.html" class="md-nav__link">
+      <a href="../aans/anomalias/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1962,7 +1902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../anomalias/iforest.html" class="md-nav__link">
+      <a href="../aans/anomalias/iforest.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1982,7 +1922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../anomalias/lof.html" class="md-nav__link">
+      <a href="../aans/anomalias/lof.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2053,7 +1993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redes-neuronales/introduccion.html" class="md-nav__link">
+      <a href="../redes-neuronales/introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2073,7 +2013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redes-neuronales/perceptron.html" class="md-nav__link">
+      <a href="../redes-neuronales/perceptron.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2093,7 +2033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redes-neuronales/multicapa.html" class="md-nav__link">
+      <a href="../redes-neuronales/multicapa.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2113,7 +2053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redes-neuronales/regresion.html" class="md-nav__link">
+      <a href="../redes-neuronales/regresion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2133,7 +2073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redes-neuronales/clasificacion.html" class="md-nav__link">
+      <a href="../redes-neuronales/clasificacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2158,18 +2098,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -2183,7 +2125,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             6. Visión por computador
@@ -2196,7 +2138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../computer-vision/introduccion.html" class="md-nav__link">
+      <a href="introduccion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2216,7 +2158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../computer-vision/convolucionales.html" class="md-nav__link">
+      <a href="convolucionales.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2236,7 +2178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../computer-vision/aumento.html" class="md-nav__link">
+      <a href="aumento.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2256,7 +2198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../computer-vision/vit.html" class="md-nav__link">
+      <a href="vit.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2274,9 +2216,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../computer-vision/recognition.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reconocimiento de objetos
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="recognition.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2285,6 +2247,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cuadros-delimitadores" class="md-nav__link">
+    Cuadros delimitadores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clasificacion-y-localizacion" class="md-nav__link">
+    Clasificación y localización
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2296,7 +2292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../computer-vision/segmentation.md" class="md-nav__link">
+      <a href="segmentation.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2344,15 +2340,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#algoritmo-k-means" class="md-nav__link">
-    Algoritmo k-means
+  <a href="#cuadros-delimitadores" class="md-nav__link">
+    Cuadros delimitadores
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#numero-optimo-de-clusteres" class="md-nav__link">
-    Número óptimo de clústeres
+  <a href="#clasificacion-y-localizacion" class="md-nav__link">
+    Clasificación y localización
   </a>
   
 </li>
@@ -2372,58 +2368,33 @@
                   
 
 
-<h1 id="agrupamiento-basado-en-prototipos">Agrupamiento basado en prototipos</h1>
-<h2 id="algoritmo-k-means">Algoritmo k-means</h2>
-<p>En este apartado veremos uno de los algoritmos de clustering más populares, <strong>k-means</strong>. Este algoritmo permite encontrar grupos de objetos similares que están más relacionados entre sí que con los objetos de otros grupos.</p>
-<p>El algoritmo k-means es extraordinariamente fácil de implementar, y también es computacionalmente muy eficiente en comparación con otros algoritmos de clustering. Este algoritmo pertenece a la categoría de clustering basada en prototipos.</p>
-<p>El <strong>clustering basado en prototipos</strong> significa que cada cluster está representado bien por un prototipo que suele ser el <strong>centroide</strong> (media) de puntos similares. Aunque k-meas es muy bueno para identificar clústeres con forma esférica, uno de los inconvenientes de este algoritmo de agrupamiento es que tenemos que especificar el número de clústeres, <em>k</em>, a priori. Una elección inadecuada de <em>k</em> puede dar a un mal rendimiento del clustering.</p>
-<p>La siguiente figura muestra la representación de un conjunto de ejemplos sin categorizar.</p>
+<h1 id="reconocimiento-de-objetos">Reconocimiento de objetos</h1>
+<p>El reconocimiento de objetos identifica objetos en imágenes. Un ejemplo podría ser el caso de un coche autónomo. Sus sistemas necesitan identificar la ubicación de todos los objetos en la carretera, como otros automóviles y peatones. Normalmente, esto se logra dibujando cuadros delimitadores alrededor de los objetos. Luego, todos los objetos localizados deben identificarse con su etiqueta de clase. El reconocimiento de objetos se utiliza en muchas aplicaciones, como vigilancia, diagnóstico médico, gestión del tráfico o análisis deportivo.</p>
+<h2 id="cuadros-delimitadores">Cuadros delimitadores</h2>
+<p>Un <strong>cuadro delimitador</strong> (<em>bounding box</em>) describe la ubicación espacial de un objeto dentro de la imagen. Los cuadros delimitadores se utilizan para anotar datos de entrenamiento. También son el resultado de los modelos de reconocimiento de objetos. Un cuadro delimitador describe con precisión la ubicación de un objeto dentro de una imagen.</p>
+<p>Un cuadro delimitador normalmente se describe por sus coordenadas superior izquierda e inferior derecha. Estos cuatro números: x1, y1, x2 e y2 definen cada cuadro delimitador. A veces, el uno y el dos se denominan mínimo y máximo, respectivamente, de modo que x1 es x_min, x2 es x_max y lo mismo ocurre con las coordenadas y.</p>
 <figure style="align: center;">
-    <img src="./images/kmeans1.png">
-    <figcaption>Conjunto de datos sin etiquetar</figcaption>
+    <img src="./images/box1.png">
+    <figcaption>Coordenadas de un bounding box</figcaption>
 </figure>
 
-<p>El algoritmo de k-means funciona de la siguiente manera:</p>
-<ol>
-<li>Elegir aleatoriamente <em>k</em> centroides de las instancias como centros de clústeres iniciales.</li>
-<li>Asignar cada instancia al centroide más cercano.</li>
-<li>Mover los centroides al centro de las instancias que le fueron asignados.</li>
-<li>Repetir los pasos 2 y 3 hasta que las asignaciones de los clústeres no cambien o se alcance una tolerancia definida por el usuario o se llegue a un número máximo de iteraciones.</li>
-</ol>
-<p>La siguiente figura muestra el funcionamiento del algoritmo.</p>
+<p>Una imagen consta de píxeles. Los píxeles proporcionan una forma de especificar la ubicación, el tamaño y los límites del objeto dentro de una imagen. Cada píxel está definido por el número de columna o la coordenada x y el número de fila o la coordenada y. El origen de la imagen (el primer píxel) tiene las coordenadas x es igual a cero e y es igual a cero y está en la esquina superior izquierda. Por ejemplo, el píxel de la columna veinte y la fila cinco corresponde a x e y iguales a veinte y cinco, respectivamente.</p>
 <figure style="align: center;">
-    <img src="./images/kmeans2.png">
-    <figcaption>Algoritmo k-means</figcaption>
+    <img src="./images/box2.png">
+    <figcaption>Coordenadas de un pixel</figcaption>
 </figure>
 
-<p>Existen variantes del algoritmo, como <strong>k-means++</strong>, la cual intenta situar los centroides iniciales lejos unos de otros. Esto conduce a resultados mejores y más consistentes que el clásico k-means.</p>
-<p>Es importante notar que es muy conveniente realizar un escalado de características previo, para que todas estas se midan en la misma escala, normalizando o estandarizando las mismas.</p>
-<h2 id="numero-optimo-de-clusteres">Número óptimo de clústeres</h2>
-<p>Uno de los principales retos del aprendizaje no supervisado es que no conocemos las etiquetas de clase reales en nuestro conjunto de datos. Por ello, no podemos utilizar métricas de rendimiento como las que utilizamos en el aprendizaje supervisado.</p>
-<p>Para cuantificar la calidad del clustering, necesitamos utilizar métricas intrínsecas, como su <strong>inercia</strong>. La inercia es la suma de las distancias cuadráticas entre las instancias y sus centroides más próximos. A mayor inercia peor calidad tendrá el clúster.</p>
-<p>Podemos utilizar una herramienta gráfica, el llamado <strong>método del codo</strong>, para estimar el número óptimo de clústeres, <em>k</em>, para una tarea determinada. Podemos decir que si <em>k</em> aumenta, la inercia disminuirá. La idea es identificar el valor de <em>k</em> en el que la reducción de la inercia comienza a reducir la velocidad de su disminución.</p>
-<p>La siguiente figura muestra un ejemplo donde se determina que el codo toma un valor de <em>k=4</em>.</p>
+<h2 id="clasificacion-y-localizacion">Clasificación y localización</h2>
+<p>La tarea de reconocimiento de objetos podría verse como una unión de 2 tareas: clasificación y localización de un objeto.</p>
+<p>Para la clasificación del objeto se utilizaría un enfoque similar al que hemos visto anteriormente en la unidad.</p>
+<p>La localización del objeto en una imagen puede expresarse como una tarea de regresión. Deberían predecirse las cuatro coordenadas del cuadro delimitador. Esto supondría añadir una segunda capa de salida densa con cuatro unidades. </p>
+<p>Para la tarea de localizacón el modelo podría entrenarse utilizando la función de pérdida <strong>MSE</strong>. En cambio, el MSE no es la mejor métrica para evaluar lo bien que puede producir el modelo los cuadros delimitadores. La métrica más utilizada en estos casos es la <strong>intersección sobre unión</strong> (<strong>IoU</strong>); que calcula el área de solapamiento entre el cuadro delimitador predicho y el cuadro delimitador objetivo, dividida entre el área de su unión.</p>
 <figure style="align: center;">
-    <img src="./images/kmeans3.png">
-    <figcaption>Detección del valor óptimo de k mediante la identificación del codo</figcaption>
+    <img src="./images/iou.png">
+    <figcaption>Coordenadas de un pixel</figcaption>
 </figure>
 
-<p>Existe otra métrica llamada <strong>puntuación de silueta</strong> que proporciona algo más de información que la inercia.</p>
-<p>Por ejemplo la siguiente figura, muestra para el anterior ejemplo, que aunque el valor de <em>k=4</em> es óptimo, un valor <em>k=5</em> también daría un cluster de buena calidad.</p>
-<figure style="align: center;">
-    <img src="./images/kmeans4.png">
-    <figcaption>Detección del valor óptimo de k mediante la identificación del codo</figcaption>
-</figure>
-
-<p>Los <strong>diagramas de silueta</strong> visualizan el coeficiente de silueta de cada instancia, ordenado por el grupo al que se asigna y por el valor de coeficiente. Cada diagrama contiene una forma de cuchillo por grupo. La altura de la forma indica el número de instancias en el grupo y la anchura representa los coeficientes de silueta ordenados de las instancias en el grupo (cuanto más ancho, mejor). </p>
-<p>Las líneas discontínuas verticales representan la puntuación media de la silueta para cada número de grupos. Cuando la mayoría de las instancias de un grupo tienen un coeficiente más bajo que esta puntuación (es decir, si muchas de las instancias terminan antes de llegar a la línea discontínua y acaban a su izquierda), entonces el grupo es bastante malo, puesto que eso significa que sus instancias están demasiado cerca de otros grupos.</p>
-<p>La siguiente figura muestra el diagrama de silueta del anterior ejemplo.</p>
-<figure style="align: center;">
-    <img src="./images/kmeans5.png">
-    <figcaption>Diagramas de silueta para distintos valores de k</figcaption>
-</figure>
-
-<p>En la anterior figura podemos ver que cuando <em>k=3</em> o 6, obtenemos grupos bastante malos, pero, cuando <em>k=4</em> o 5, los grupos están bastante bien: la mayoría de las instancias se extienden más allá de la línea discontinua, a la derecha y más cerca de 1.0. Cuando <em>k=4</em>, el grupo del índice 1 (el segundo empezando por abajo) es bastante grande. Cuando <em>k=5</em>, todos los grupos tienen tamaños similares. Por tanto, aunque la puntuación de la silueta global de <em>k=4</em> es un poco más grande que la de <em>k=5</em>, parece buena idea utilizar <em>k=5</em> para obtener grupos de tamaños similares.</p>
+<p>Un IoU de 0 significa que no hay solapamiento, mientras que un valor de 1 significa que hay un solapamiento perfecto. Se considera que un valor &gt; 0.5 es una buena predicción.</p>
 
 
 
@@ -2465,12 +2436,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.726fbb30.min.js"></script>
+      <script src="../assets/javascripts/bundle.726fbb30.min.js"></script>
       
-        <script src="../../javascripts/katex.js"></script>
+        <script src="../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
